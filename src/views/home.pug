@@ -15,6 +15,16 @@ html(lang="en")
                     input(placeholder="room name", required, type="text")
                     button Enter room
             div#call
+                h3
+                ul
+                div#nickname
+                    form
+                        input(placeholder="nickname", required, type="text")
+                        button Save
+                div#message
+                    form
+                        input(placeholder="message", required, type="text")
+                        button Send
                 div#myStream
                     video#myFace(autoplay,playsinline, width="400", height="400")
                     button#mute Mute
@@ -22,4 +32,5 @@ html(lang="en")
                     select#cameras
                     video#peerFace(autoplay,playsinline, width="400", height="400")
         script(src="/socket.io/socket.io.js") 
-        script(src="/public/js/app.js")  
+        script(src="/public/js/app.js")
+
