@@ -66,6 +66,7 @@ const handleEnterroom = async (event) => {
   input.value = "";
 
 }
+//  caemra event
 
 const handleCamera = async () => {
   const videoTracks = await stream.getVideoTracks();
@@ -80,7 +81,6 @@ const handleCamera = async () => {
   })
 }
 
-//  caemra event
 async function getCameras() {
   try {
     const devices = await navigator.mediaDevices.enumerateDevices();
@@ -161,8 +161,6 @@ async function handleCameraChange() {
 
 
 async function initCall() {
-  welcome.hidden = true;
-  call.hidden = false;
   await getMedia();
   makeConnection();
 }
